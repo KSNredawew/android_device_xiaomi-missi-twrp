@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<triggers>
+  <type name="public">
+    <trg name="app_id" val="0" range="0,100" type="int" step="1" des="APP mode id">SPRD_TAG_TOP_APP_ID</trg>
+    <trg name="bv" val="0" range="-600,1600" type="int" step="1" des="brightness value">SPRD_TAG_BV</trg>
+    <trg name="ct" val="0" range="1000,20000" type="int" step="200" des="color tempa">SPRD_TAG_CT</trg>
+    <trg name="face" val="0" range="0,1" type="int" step="1" des="face">SPRD_TAG_FACE_FLAG</trg>
+    <trg name="lcg_gain" val="0" range="1.0,4.0" type="float" step="1" des="lcg gain">SPRD_TAG_LCG_GAIN_1024X</trg>
+    <trg name="total_gain" val="0" range="1.0,100000.0" type="float" step="1.0" des="total gain">SPRD_TAG_TOTAL_GAIN_128X</trg>
+    <trg name="frame_num" val="0" range="0,255" type="int" step="1" des="frame_number">SPRD_TAG_FRAME_NUM</trg>
+    <trg name="zoom_ratio" val="0" range="0.0,12.0" type="float" step="1.0" des="zoom ratio">SPRD_TAG_SENSOR_ZOOM</trg>
+    <trg name="environment" val="0" range="0,2" type="int" step="1" des="night day-indoor day-outdoor">SPRD_TAG_ENVIRONMENT</trg>
+    <trg name="ev" val="0" range="-100.0,100.0" type="float" step="1.0" des="ev+,ev0,ev-">SPRD_TAG_EV</trg>
+    <trg name="iso" val="0" range="50,25600" type="int" step="1" des="iso">SPRD_TAG_ISO</trg>
+    <trg name="evd" val="0" range="0,132000" type="int" step="1" des="hm_evd">SPRD_TAG_EVD</trg>
+    <trg name="backlight" val="0" range="0,65535" type="int" step="1" des="final_face_backlight">SPRD_TAG_BACK_LIGHT</trg>
+    <trg name="default" val="0" range="0,0" type="int" step="0" des="default">SPRD_TAG_DEFAULT</trg>
+    <trg name="ai_scene" val="0" range="0,25" type="int" step="1" des="ai_scene_id">SPRD_TAG_AI_SCENE</trg>
+  </type>
+  <type name="hdr_xdr">
+    <trg name="dark_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="dark ratio">SPRD_TAG_DARK_RATIO</trg>
+    <trg name="bright_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="bright ratio">SPRD_TAG_BRIGHT_RATIO</trg>
+  </type>
+  <type name="chdr">
+    <trg name="chdr_dark_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="chdr dark ratio">SPRD_TAG_DARK_RATIO_CHDR</trg>
+    <trg name="chdr_bright_ratio" val="0" range="0.0,100.0" type="float" step="1.0" des="chdr bright ratio">SPRD_TAG_BRIGHT_RATIO_CHDR</trg>
+  </type>
+  <type name="customer"/>
+</triggers>

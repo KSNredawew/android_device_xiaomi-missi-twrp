@@ -22,7 +22,7 @@ PRODUCT_PACKAGES += \
      vendor.sprd.hardware.boot@1.2-impl
 
 PRODUCT_PACKAGES += \
-    unisoc.bootctrl
+    unisoc.bootctrl \
     bootctrl.default
 
 PRODUCT_PACKAGES := \

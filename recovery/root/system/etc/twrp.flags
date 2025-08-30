@@ -1,0 +1,117 @@
+# TWRP flags for Redmi (serenity) device
+
+## User-writable / Storage Partitions
+/boot_a               emmc    /dev/block/mmcblk0p38           flags=display="Boot A";backup=1;flashimg=1;slotselect
+/boot_b               emmc    /dev/block/mmcblk0p39           flags=display="Boot B";backup=1;flashimg=1;slotselect
+/init_boot_a          emmc    /dev/block/mmcblk0p42           flags=display="Init Boot A";backup=1;flashimg=1;slotselect
+/init_boot_b          emmc    /dev/block/mmcblk0p43           flags=display="Init Boot B";backup=1;flashimg=1;slotselect
+/vendor_boot_a        emmc    /dev/block/mmcblk0p40           flags=display="Vendor Boot A";backup=1;flashimg=1;slotselect
+/vendor_boot_b        emmc    /dev/block/mmcblk0p41           flags=display="Vendor Boot B";backup=1;flashimg=1;slotselect
+/dtbo_a               emmc    /dev/block/mmcblk0p46           flags=display="DTBO A";backup=1;flashimg=1;slotselect
+/dtbo_b               emmc    /dev/block/mmcblk0p47           flags=display="DTBO B";backup=1;flashimg=1;slotselect
+/dtb_a                emmc    /dev/block/mmcblk0p44           flags=display="DTB A";backup=1;flashimg=1;slotselect
+/dtb_b                emmc    /dev/block/mmcblk0p45           flags=display="DTB B";backup=1;flashimg=1;slotselect
+
+## Verify Boot
+/vbmeta_a             emmc    /dev/block/mmcblk0p51           flags=display="VBMeta A";backup=1;flashimg=1;slotselect
+/vbmeta_b             emmc    /dev/block/mmcblk0p52           flags=display="VBMeta B";backup=1;flashimg=1;slotselect
+/vbmeta_system_a      emmc    /dev/block/mmcblk0p55           flags=display="VBMeta System A";backup=1;flashimg=1;slotselect
+/vbmeta_system_b      emmc    /dev/block/mmcblk0p56           flags=display="VBMeta System B";backup=1;flashimg=1;slotselect
+/vbmeta_vendor_a      emmc    /dev/block/mmcblk0p57           flags=display="VBMeta Vendor A";backup=1;flashimg=1;slotselect
+/vbmeta_vendor_b      emmc    /dev/block/mmcblk0p58           flags=display="VBMeta Vendor B";backup=1;flashimg=1;slotselect
+/vbmeta_system_ext_a  emmc    /dev/block/mmcblk0p59           flags=display="VBMeta System Ext A";backup=1;flashimg=1;slotselect
+/vbmeta_system_ext_b  emmc    /dev/block/mmcblk0p60           flags=display="VBMeta System Ext B";backup=1;flashimg=1;slotselect
+/vbmeta_product_a     emmc    /dev/block/mmcblk0p61           flags=display="VBMeta Product A";backup=1;flashimg=1;slotselect
+/vbmeta_product_b     emmc    /dev/block/mmcblk0p62           flags=display="VBMeta Product B";backup=1;flashimg=1;slotselect
+/vbmeta_odm_a         emmc    /dev/block/mmcblk0p63           flags=display="VBMeta ODM A";backup=1;flashimg=1;slotselect
+/vbmeta_odm_b         emmc    /dev/block/mmcblk0p64           flags=display="VBMeta ODM B";backup=1;flashimg=1;slotselect
+/avbmeta_rs_a         emmc    /dev/block/mmcblk0p65           flags=display="AVBMeta RS A";backup=1;flashimg=1;slotselect
+/avbmeta_rs_b         emmc    /dev/block/mmcblk0p66           flags=display="AVBMeta RS B";backup=1;flashimg=1;slotselect
+
+## Firmware
+/misc                 emmc    /dev/block/mmcblk0p4            flags=display="Misc"
+/persist              emmc    /dev/block/mmcblk0p21           flags=display="Persist";backup=1;flashimg
+/logo_a               emmc    /dev/block/mmcblk0p12           flags=display="Logo A";backup=1;flashimg=1;slotselect
+/logo_b               emmc    /dev/block/mmcblk0p13           flags=display="Logo B";backup=1;flashimg=1;slotselect
+/fbootlogo            emmc    /dev/block/mmcblk0p14           flags=display="Fastboot Logo";backup=1;flashimg
+/miscdata             emmc    /dev/block/mmcblk0p2            flags=display="Miscdata";backup=1
+/prodnv               emmc    /dev/block/mmcblk0p1            flags=display="ProdNV";backup=1
+/cache                emmc    /dev/block/mmcblk0p49           flags=display="Cache";wipeingui
+/metadata             emmc    /dev/block/mmcblk0p53           flags=display="Metadata";wipeingui
+/blackbox             emmc    /dev/block/mmcblk0p50           flags=display="Blackbox";backup=1
+/cust                 emmc    /dev/block/mmcblk0p79           flags=display="Cust";backup=1
+/reserve1             emmc    /dev/block/mmcblk0p73           flags=display="Reserve1";backup=1
+/reserve2             emmc    /dev/block/mmcblk0p74           flags=display="Reserve2";backup=1
+/calinv               emmc    /dev/block/mmcblk0p75           flags=display="Calinv";backup=1
+/gsort                emmc    /dev/block/mmcblk0p76           flags=display="Gsort";backup=1
+/mem                  emmc    /dev/block/mmcblk0p77           flags=display="Mem";backup=1
+/ffu                  emmc    /dev/block/mmcblk0p78           flags=display="FFU";backup=1
+/rescue               emmc    /dev/block/mmcblk0p80           flags=display="Rescue";backup=1
+/sysdumpdb            emmc    /dev/block/mmcblk0p54           flags=display="Sysdumpdb";backup=1
+
+## Modem and DSP Partitions
+/l_modem_a            emmc    /dev/block/mmcblk0p22           flags=display="Modem A";backup=1;flashimg=1;slotselect
+/l_modem_b            emmc    /dev/block/mmcblk0p23           flags=display="Modem B";backup=1;flashimg=1;slotselect
+/l_agdsp_a            emmc    /dev/block/mmcblk0p30           flags=display="AGDSP A";backup=1;flashimg=1;slotselect
+/l_agdsp_b            emmc    /dev/block/mmcblk0p31           flags=display="AGDSP B";backup=1;flashimg=1;slotselect
+/l_gdsp_a             emmc    /dev/block/mmcblk0p26           flags=display="GDSP A";backup=1;flashimg=1;slotselect
+/l_gdsp_b             emmc    /dev/block/mmcblk0p27           flags=display="GDSP B";backup=1;flashimg=1;slotselect
+/l_ldsp_a             emmc    /dev/block/mmcblk0p28           flags=display="LDSP A";backup=1;flashimg=1;slotselect
+/l_ldsp_b             emmc    /dev/block/mmcblk0p29           flags=display="LDSP B";backup=1;flashimg=1;slotselect
+/l_fixnv1_a           emmc    /dev/block/mmcblk0p15           flags=display="FixNV1 A";backup=1;flashimg=1;slotselect
+/l_fixnv1_b           emmc    /dev/block/mmcblk0p17           flags=display="FixNV1 B";backup=1;flashimg=1;slotselect
+/l_fixnv2_a           emmc    /dev/block/mmcblk0p16           flags=display="FixNV2 A";backup=1;flashimg=1;slotselect
+/l_fixnv2_b           emmc    /dev/block/mmcblk0p18           flags=display="FixNV2 B";backup=1;flashimg=1;slotselect
+/l_deltanv_a          emmc    /dev/block/mmcblk0p24           flags=display="DeltaNV A";backup=1;flashimg=1;slotselect
+/l_deltanv_b          emmc    /dev/block/mmcblk0p25           flags=display="DeltaNV B";backup=1;flashimg=1;slotselect
+/l_runtimenv1         emmc    /dev/block/mmcblk0p19           flags=display="RuntimeNV1";backup=1
+/l_runtimenv2         emmc    /dev/block/mmcblk0p20           flags=display="RuntimeNV2";backup=1
+
+## Secure Partitions
+/sml_a                emmc    /dev/block/mmcblk0p7            flags=display="SML A";backup=1;slotselect
+/sml_b                emmc    /dev/block/mmcblk0p8            flags=display="SML B";backup=1;slotselect
+/teecfg_a             emmc    /dev/block/mmcblk0p34           flags=display="TEECFG A";backup=1;slotselect
+/teecfg_b             emmc    /dev/block/mmcblk0p35           flags=display="TEECFG B";backup=1;slotselect
+/trustos_a            emmc    /dev/block/mmcblk0p5            flags=display="TrustOS A";backup=1;slotselect
+/trustos_b            emmc    /dev/block/mmcblk0p6            flags=display="TrustOS B";backup=1;slotselect
+/hypervsior_a         emmc    /dev/block/mmcblk0p36           flags=display="Hypervisor A";backup=1;slotselect
+/hypervsior_b         emmc    /dev/block/mmcblk0p37           flags=display="Hypervisor B";backup=1;slotselect
+/pm_sys_a             emmc    /dev/block/mmcblk0p32           flags=display="PM Sys A";backup=1;slotselect
+/pm_sys_b             emmc    /dev/block/mmcblk0p33           flags=display="PM Sys B";backup=1;slotselect
+
+## Dynamic Partitions (A Slots)
+/system_a             emmc    /dev/block/mapper/system_a      flags=display="System A";backup=1;flashimg=1;slotselect
+/vendor_a             emmc    /dev/block/mapper/vendor_a      flags=display="Vendor A";backup=1;flashimg=1;slotselect
+/product_a            emmc    /dev/block/mapper/product_a     flags=display="Product A";backup=1;flashimg=1;slotselect
+/system_ext_a         emmc    /dev/block/mapper/system_ext_a  flags=display="System Ext A";backup=1;flashimg=1;slotselect
+/odm_a                emmc    /dev/block/mapper/odm_a         flags=display="ODM A";backup=1;flashimg=1;slotselect
+/system_dlkm_a        emmc    /dev/block/mapper/system_dlkm_a flags=display="System DLKM A";backup=1;flashimg=1;slotselect
+/vendor_dlkm_a        emmc    /dev/block/mapper/vendor_dlkm_a flags=display="Vendor DLKM A";backup=1;flashimg=1;slotselect
+
+## Dynamic Partitions (B Slots)
+/system_b             emmc    /dev/block/mapper/system_b      flags=display="System B";backup=1;flashimg=1;slotselect
+/vendor_b             emmc    /dev/block/mapper/vendor_b      flags=display="Vendor B";backup=1;flashimg=1;slotselect
+/product_b            emmc    /dev/block/mapper/product_b     flags=display="Product B";backup=1;flashimg=1;slotselect
+/system_ext_b         emmc    /dev/block/mapper/system_ext_b  flags=display="System Ext B";backup=1;flashimg=1;slotselect
+/odm_b                emmc    /dev/block/mapper/odm_b         flags=display="ODM B";backup=1;flashimg=1;slotselect
+/system_dlkm_b        emmc    /dev/block/mapper/system_dlkm_b flags=display="System DLKM B";backup=1;flashimg=1;slotselect
+/vendor_dlkm_b        emmc    /dev/block/mapper/vendor_dlkm_b flags=display="Vendor DLKM B";backup=1;flashimg=1;slotselect
+
+## Dynamic Partitions (Mount)
+/system_errofs        auto    /dev/block/dm-0                 flags=display="System Errofs";wipeingui
+/system_ext_errofs    auto    /dev/block/dm-1                 flags=display="System Ext Errofs";wipeingui
+/vendor_errofs        auto    /dev/block/dm-2                 flags=display="Vendor Errofs";wipeingui
+/product_errofs       auto    /dev/block/dm-3                 flags=display="Product Errofs";wipeingui
+/odm_errofs           auto    /dev/block/dm-4                 flags=display="ODM Errofs";wipeingui
+
+## Data and Storage
+/data                 f2fs    /dev/block/mmcblk0p81           flags=display="Data";wipeingui
+/userdata             f2fs    /dev/block/by-name/userdata     flags=display="Userdata";flashimg
+/userdata_mapper      emmc    /dev/block/mapper/userdata      flags=display="Userdata Mapper";flashimg
+
+## Removable Storage
+/external_sd          auto    /dev/block/mmcblk1p1 /dev/block/mmcblk1 flags=display="External SDcard";storage;wipeingui;removable;backup=0
+/usbotg               auto    /dev/block/sda1 /dev/block/sda  flags=display="USB-OTG";storage;wipeingui;removable;backup=0
+
+## Internal Storage (for TWRP/OrangeFox)
+/storage              f2fs    /data/media/0                   flags=display="Internal Storage";usermrf;backup=1;fsflags="bind";removable
